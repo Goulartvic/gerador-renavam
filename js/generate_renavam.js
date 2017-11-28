@@ -20,15 +20,15 @@ function renavam() {
     if(moduloOnze == 10) {
         moduloOnze = 0;
     }
-    var mascaraRenavam = document.querySelector("#maskRenavam");
-    if (mascaraRenavam.checked)
+    var maskRenavam = document.querySelector("#maskRenavam");
+    if (maskRenavam.checked)
         return ''+n0+n1+n2+n3+n4+n5+n6+n7+n8+n9+'-'+moduloOnze;
     else
         return ''+n0+n1+n2+n3+n4+n5+n6+n7+n8+n9+moduloOnze;
 }
 
 function generate() {
-    var numeroRenavam = document.querySelector("#numberRenavam");
-    numeroRenavam.value = renavam();
+    var numberRenavam = document.querySelector("#numberRenavam");
+    numberRenavam.value = renavam();
     console.log(renavam())
 }
